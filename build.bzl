@@ -603,7 +603,7 @@ def nginx_repositories_boringssl(bind):
     native.git_repository(
         name = "boringssl",
         commit = "41451f44e08a94d18f7056410b26f79e03d30509",  # TLSv1.3 Draft 23 Support
-        remote = "https://github.com/S8Cloud/boringssl",
+        remote = "https://github.com/S8Cloud/boringssl.git",
     )
 
     if bind:
@@ -620,7 +620,7 @@ def nginx_repositories_boringssl(bind):
 def nginx_repositories_brotli(bind):
     native.git_repository(
         name = "org_brotli",
-        commit = "f9b8c02673c576a3e807edbf3a9328e9e7af6d7c",  # 2018-05-20
+        commit = "c1a950f8ec02afa54323065714c66c6b7c4cda69",  # 2018-05-31
         remote = "https://github.com/google/brotli.git",
     )
 
