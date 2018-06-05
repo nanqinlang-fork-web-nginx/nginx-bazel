@@ -620,7 +620,7 @@ def nginx_repositories_boringssl(bind):
 def nginx_repositories_brotli(bind):
     native.git_repository(
         name = "org_brotli",
-        commit = "c1a950f8ec02afa54323065714c66c6b7c4cda69",  # 2018-05-31
+        commit = "1e7ea1d8e61b7cd51149a2dd491bc86ff8ef460c",  # 2018-06-04
         remote = "https://github.com/google/brotli.git",
     )
 
