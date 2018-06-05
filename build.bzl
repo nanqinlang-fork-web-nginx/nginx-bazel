@@ -602,7 +602,7 @@ cc_library(
 def nginx_repositories_boringssl(bind):
     native.git_repository(
         name = "boringssl",
-        commit = "41451f44e08a94d18f7056410b26f79e03d30509",  # TLSv1.3 Draft 23 Support
+        commit = "c957c40f89b2ee06643bbf9f49cfad911bbc8f24",  # TLSv1.3 Draft 23 & 28 Support
         remote = "https://github.com/S8Cloud/boringssl.git",
     )
 
