@@ -602,7 +602,7 @@ cc_library(
 def nginx_repositories_boringssl(bind):
     native.git_repository(
         name = "boringssl",
-        commit = "c9eb712526d1954e3b154a4b26aba94c58a87680",  # TLSv1.3 Draft 23 & 28 Support
+        commit = "f07fcb0a82b5368bba80b444a0fef49099e10573",  # TLSv1.3 Draft 23 & 28 Support
         remote = "https://github.com/S8Cloud/boringssl.git",
     )
 
@@ -620,7 +620,7 @@ def nginx_repositories_boringssl(bind):
 def nginx_repositories_brotli(bind):
     native.git_repository(
         name = "org_brotli",
-        commit = "b601fe817bd3217cb144bbb380a43cae8e847388",  # 1.0.5
+        commit = "222564a95d9ab58865a096b8d9f7324ea5f2e03e",  # 2016-12-02
         remote = "https://github.com/google/brotli.git",
     )
 
@@ -639,8 +639,8 @@ def nginx_repositories_ngx_brotli(nginx):
     native.new_git_repository(
         name = "ngx_brotli",
         build_file_content = _NGX_BROTLI_BUILD_FILE.format(nginx = nginx),
-        commit = "e26248ee361c04e25f581b92b85d95681bdffb39",  # 2018-05-20
-        remote = "https://github.com/eustas/ngx_brotli.git",
+        commit = "5ead1ada782b18c7b38a3c2798a40a334801c7b6",  # 2016-12-05
+        remote = "https://nginx.googlesource.com/ngx_brotli",
     )
 
 def nginx_repositories_pcre(bind):
